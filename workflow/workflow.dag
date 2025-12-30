@@ -1,0 +1,4 @@
+JOB Imgtbl /mnt/shared/imgtbl.sub
+JOB SingleBand /mnt/shared/singleband.sub
+
+PARENT Imgtbl CHILD SingleBand

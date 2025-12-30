@@ -1,0 +1,9 @@
+universe = vanilla
+executable = /mnt/shared/scripts/singleband.sh
+arguments =
+output = /mnt/shared/logs/singleband.out
+error  = /mnt/shared/logs/singleband.err
+log    = /mnt/shared/logs/singleband.log
+request_cpus = 1
+request_memory = 1GB
+queue

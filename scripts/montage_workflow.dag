@@ -1,0 +1,8 @@
+JOB SingleBand singleband.sub
+JOB Imgtbl imgtbl.sub
+JOB Reproject reproject.sub
+JOB ColorMosaic color.sub
+
+PARENT SingleBand CHILD Imgtbl
+PARENT Imgtbl CHILD Reproject
+PARENT Reproject CHILD ColorMosaic
