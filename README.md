@@ -1,20 +1,15 @@
 # HTCondor DAG Workflow For Image Processing
-This project demonstrates the design and implementation of a distributed computing platform on AWS using HTCondor, HTCondor DAGMan, and Network File System (NFS) to execute a real-world scientific workflow. The chosen use case is astronomical image mosaicking using the Montage toolkit on 2MASS K-band data.
+This project demonstrates how distributed resource management, shared storage, and workflow setup in AWS using HTCondor, HTCondor DAGMan, and NFS can efficiently handle data-intensive scientific workloads. 
 
-The system showcases how distributed resource management, shared storage, and workflow setup can efficiently handle data-intensive scientific workloads.
-
-**Use Case: Montage Image Mosaicking**
-
-Montage is a widely used astronomy toolkit for assembling FITS images into science-grade mosaics.
+The use case of the project is astronomical image mosaicking using the Montage , which is a widely used astronomy toolkit for assembling FITS images into science-grade mosaics images. This project focus on processing the raw FITS images to generate a single-band K-band mosaic using distributed execution.
 
 - Dataset: 2MASS K-band
 - Target Object: NGC 3372
--Field of View: 1.0 × 1.0 degrees
+- Field of View: 1.0 × 1.0 degrees
 - Number of Images: 212
-The workflow processes raw FITS images to generate a single-band K-band mosaic using distributed execution.
 
-**The main objectives of this project were to:**
-- Design a multi-step computational workflow in AWS for Astronomy Image processing 
+🎯**The main objectives of this project were to:**
+- Design a distributed computational workflow in AWS for Astronomy Image processing 
 - Understand how job dependencies affect workflow execution
 - Identify and debug job submission and execution failures
 - Compare the performance between distributed execution and single-node execution
