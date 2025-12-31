@@ -14,7 +14,7 @@ The use case of the project is astronomical image mosaicking using the Montage ,
 - Identify and debug job submission and execution failures
 - Compare the performance between distributed execution and single-node execution
 
-## System Architecture & Platform Setup 
+## 🏗️ System Architecture & Platform Setup 
 The platform is fully deployed within the AWS cloud environment and consists of 4 AWS EC2 instances were lauched (1 Central Manager, 1 Submission Node, 2 Execution Nodes):
 - HTCondor Central Manager : manages job queues, matchmaking, and scheduling
 - Submission Node : used by users to submit jobs and workflows
@@ -38,7 +38,7 @@ The platform is fully deployed within the AWS cloud environment and consists of 
 </div>
 
 
-## Workflow Design
+##  ⚙️Workflow Design
 The workflow consists of two sequential jobs executed using HTCondor DAGMan:
 
 1. Imgtbl – Generates metadata tables from the raw astronomical images
@@ -97,7 +97,7 @@ The workflow is defined as a Directed Acyclic Graph (DAG), where the SingleBand 
     as a key factor that can lead to job execution failures if not properly managed.
 
 
-## Output & Findings
+## 📊 Output & Findings
 - K-band FITS Mosaic Ouput : Visualized using mViewer
 <br> 
 <img src="docs/Image_output_ksmall.fits.png" alt="Alt text" width="350" height="300"> 
@@ -111,7 +111,7 @@ The workflow is defined as a Directed Acyclic Graph (DAG), where the SingleBand 
     | Reduced contention    | Single point of failure    |
     <img src="docs/Performance_Comparison.png" alt="Alt text" width="450" height="300"> 
 
-## Conclusion
+## ✅ Conclusion
 This project validates the effectiveness of HTCondor + DAGMan + NFS as a distributed computing solution for Montage Astronomy Image Processing. 
 
 - Improved performance through distributed execution
