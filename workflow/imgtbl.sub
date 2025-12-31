@@ -1,9 +1,10 @@
+#!/bin/bash
 universe = vanilla
-executable = /mnt/shared/scripts/reproject.sh
-arguments = /mnt/shared/raw rimages.tbl region.hdr projected stats.tbl
-output = /mnt/shared/logs/reproject.out
-error  = /mnt/shared/logs/reproject.err
-log    = /mnt/shared/logs/reproject.log
+executable = /mnt/shared/scripts/imgtbl.sh
+arguments = /mnt/shared/input_data /mnt/shared/rimages.tbl
+output = /mnt/shared/logs/imgtbl.out
+error = /mnt/shared/logs/imgtbl.err
+log = /mnt/shared/logs/imgtbl.log
 request_cpus = 1
 request_memory = 1GB
 queue
